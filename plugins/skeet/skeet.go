@@ -14,7 +14,6 @@ func BlueskyCLI() schema.Executable {
 		DocsURL: sdk.URL("https://github.com/sharunkumar/skeet"),
 		NeedsAuth: needsauth.IfAll(
 			needsauth.NotForHelpOrVersion(),
-			needsauth.NotWithoutArgs(),
 		),
 		Uses: []schema.CredentialUsage{
 			{
